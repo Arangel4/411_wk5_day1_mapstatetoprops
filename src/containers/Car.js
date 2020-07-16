@@ -1,0 +1,11 @@
+// Import connect from react and cars component
+import {connect} from 'react-redux';
+import Car from '../components/Car.js';
+
+const mapStateToProps = (state) => {
+    return {
+        cars: state.cars
+    }
+}
+
+export default connect(mapStateToProps)(Car);
